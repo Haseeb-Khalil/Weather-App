@@ -86,7 +86,7 @@ window.addEventListener("load", () => {
   // Wind Speed
   function showWindSpeed(data) {
     let windSpeed = document.getElementById("wind");
-    windSpeed.innerHTML = `Wind Speed: ${data.current.wind_mph}mph or ${data.current.wind_kph}kph`;
+    windSpeed.innerHTML = `Wind Speed: ${data.current.wind_mph}mph , ${data.current.wind_kph}kph`;
   }
   // Wind Direction
   function showWindDirection(data) {
@@ -96,17 +96,17 @@ window.addEventListener("load", () => {
   // Rain Fall
   function showRainFall(data) {
     let rainFall = document.getElementById("rain");
-    rainFall.innerHTML = `Rain in last 24hr: ${data.current.precip_in}in ${data.current.precip_mm}mm`;
+    rainFall.innerHTML = `Rain : ${data.current.precip_in}in , ${data.current.precip_mm}mm`;
   }
   // Feels like
   function showFeelsLike(data) {
     let tempFeelsLike = document.getElementById("feelsLike");
-    tempFeelsLike.innerHTML = `Feels Like: ${data.current.feelslike_c}C or ${data.current.feelslike_f}F`;
+    tempFeelsLike.innerHTML = `Feels Like: ${data.current.feelslike_c}C , ${data.current.feelslike_f}F`;
   }
   // Visibility
   function showVisibility(data) {
     let visibility = document.getElementById("visibility");
-    visibility.innerHTML = `Visibility: ${data.current.vis_miles}miles ${data.current.vis_km}km`;
+    visibility.innerHTML = `Visibility: ${data.current.vis_miles}miles , ${data.current.vis_km}km`;
   }
   // UV Index
   function showUVIndex(data) {
