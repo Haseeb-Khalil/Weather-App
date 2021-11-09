@@ -53,7 +53,8 @@ window.addEventListener("load", () => {
         });
     });
   } else {
-    alert("Please Allow location to get the Weather of Current Location.");
+    locationName.innerHTML =
+      "Please Allow location to get the Weather of Current Location.";
   }
   //}
 
