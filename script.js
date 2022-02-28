@@ -16,15 +16,8 @@ window.addEventListener("load", () => {
   let longitude;
   let latitude;
 
-  // function pageSetUp() {
-  //   getLocationData();
-  // }
-  // window.onload = pageSetUp;
-
-  //function getLocationData() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition((position) => {
-      //console.log(position);
       longitude = position.coords.longitude;
       latitude = position.coords.latitude;
 
@@ -37,7 +30,6 @@ window.addEventListener("load", () => {
           }
         })
         .then((data) => {
-          // console.log(data);
           writeLocationName(data);
           makeWeatherIcon(data);
           showWeatherDescription(data);
@@ -56,7 +48,6 @@ window.addEventListener("load", () => {
     locationName.innerHTML =
       "Please Allow location to get the Weather of Current Location.";
   }
-  //}
 
   //=======All Functions======/////
 
@@ -78,9 +69,9 @@ window.addEventListener("load", () => {
   // Temperature
   function showTemperature(data) {
     // location Temperature in Fahrenheit
-    temperatureDegreeFahrenheit.textContent = `${data.current.temp_f} F`;
+    temperatureDegreeFahrenheit.textContent = `${data.current.temp_f}`;
     // location Temperature in Celsius
-    temperatureDegreeCelsius.textContent = `${data.current.temp_c} C`;
+    temperatureDegreeCelsius.textContent = `${data.current.temp_c}`;
   }
 
   // Wind Speed

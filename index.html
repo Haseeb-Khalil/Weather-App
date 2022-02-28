@@ -24,7 +24,7 @@
         <!--Icon-->
         <img id="weather-icon" src="" alt="" />
         <!--Description-->
-        <p id="temperature-description"><!--Description--></p>
+        <h2 id="temperature-description"><!--Description--></h2>
       </div>
     </div>
 
@@ -32,9 +32,14 @@
     <div id="temperature-section">
       <!--Temperature in Units-->
       <div id="degree-section">
-        <h3 id="temperature-degreeF"><!--F--></h3>
-        <br />
-        <h3 id="temperature-degreeC"><!--C--></h3>
+        <div class="temp">
+          <h3 id="temperature-degreeF"><!--F--></h3>
+          <p class="degree-sign">&#8457;</p>
+        </div>
+        <div class="temp">
+          <h3 id="temperature-degreeC"><!--C--></h3>
+          <p class="degree-sign">&#8451;</p>
+        </div>
       </div>
     </div>
     <!--Extra Info-->
